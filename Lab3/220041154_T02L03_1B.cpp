@@ -13,11 +13,9 @@ class Temperature {
    private:
     ld value;
     string unit;
-
     bool isValidUnit(const string& u) {
         return (u == "Celsius" || u == "Fahrenheit" || u == "Kelvin");
     }
-
    public:
     void assign(ld tempValue, const string& tempUnit) {
         if (!isValidUnit(tempUnit)) {
